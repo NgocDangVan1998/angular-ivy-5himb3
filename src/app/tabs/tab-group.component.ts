@@ -6,7 +6,7 @@ import { TabPanelComponent } from './tab-panel.component';
   template: `
     <div class="tab-headers">
       <div class="tab-header-item" 
-      *ngFor="let tab of tabPanelList;index = idx" 
+      *ngFor="let tab of tabPanelList;let idx = index" 
       (click)="activeIndexChange.emit(idx)">
         {{tab.title}}
         <button (click) = "removeTab(tab)">x</button>
