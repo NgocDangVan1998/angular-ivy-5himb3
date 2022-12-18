@@ -17,7 +17,9 @@ import { TabPanelComponent } from './tab-panel.component';
       <ng-container *ngTemplateOutlet="tabPanelList[activeIndex].panelBody">
       </ng-container>
     </div>
-    <ng-template></ng-template>
+    <ng-template #noTabs>
+      No more tabs
+    </ng-template>
   `,
   styles: [],
 })
